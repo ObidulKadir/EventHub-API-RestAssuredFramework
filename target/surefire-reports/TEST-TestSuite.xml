@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="8.43" tests="11" errors="0" skipped="0" failures="0" flakes="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="D:\PersonalSpace\PracticeSpace\Rest Assured\EventHubAPI\target\test-classes;D:\PersonalSpace\PracticeSpace\Rest Assured\EventHubAPI\target\classes;C:\Users\LENOVO\.m2\repository\io\rest-assured\rest-assured\6.0.0\rest-assured-6.0.0.jar;C:\Users\LENOVO\.m2\repository\org\apache\groovy\groovy\5.0.3\groovy-5.0.3.jar;C:\Users\LENOVO\.m2\repository\org\apache\groovy\groovy-xml\5.0.3\groovy-xml-5.0.3.jar;C:\Users\LENOVO\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\LENOVO\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\LENOVO\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\LENOVO\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\LENOVO\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\LENOVO\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\LENOVO\.m2\repository\io\rest-assured\json-path\6.0.0\json-path-6.0.0.jar;C:\Users\LENOVO\.m2\repository\org\apache\groovy\groovy-json\5.0.3\groovy-json-5.0.3.jar;C:\Users\LENOVO\.m2\repository\io\rest-assured\rest-assured-common\6.0.0\rest-assured-common-6.0.0.jar;C:\Users\LENOVO\.m2\repository\io\rest-assured\xml-path\6.0.0\xml-path-6.0.0.jar;C:\Users\LENOVO\.m2\repository\com\jayway\jsonpath\json-path\3.0.0\json-path-3.0.0.jar;C:\Users\LENOVO\.m2\repository\net\minidev\json-smart\2.6.0\json-smart-2.6.0.jar;C:\Users\LENOVO\.m2\repository\net\minidev\accessors-smart\2.6.0\accessors-smart-2.6.0.jar;C:\Users\LENOVO\.m2\repository\org\ow2\asm\asm\9.7.1\asm-9.7.1.jar;C:\Users\LENOVO\.m2\repository\org\slf4j\slf4j-api\2.0.17\slf4j-api-2.0.17.jar;C:\Users\LENOVO\.m2\repository\org\json\json\20251224\json-20251224.jar;C:\Users\LENOVO\.m2\repository\org\testng\testng\7.12.0\testng-7.12.0.jar;C:\Users\LENOVO\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\LENOVO\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\LENOVO\.m2\repository\com\github\scribejava\scribejava-apis\8.3.3\scribejava-apis-8.3.3.jar;C:\Users\LENOVO\.m2\repository\com\github\scribejava\scribejava-core\8.3.3\scribejava-core-8.3.3.jar;C:\Users\LENOVO\.m2\repository\com\github\scribejava\scribejava-java8\8.3.3\scribejava-java8-8.3.3.jar;C:\Users\LENOVO\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.14\json-schema-validator-2.2.14.jar;C:\Users\LENOVO\.m2\repository\com\google\guava\guava\28.2-android\guava-28.2-android.jar;C:\Users\LENOVO\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\LENOVO\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\LENOVO\.m2\repository\org\checkerframework\checker-compat-qual\2.5.5\checker-compat-qual-2.5.5.jar;C:\Users\LENOVO\.m2\repository\com\google\errorprone\error_prone_annotations\2.3.4\error_prone_annotations-2.3.4.jar;C:\Users\LENOVO\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\LENOVO\.m2\repository\com\github\java-json-tools\jackson-coreutils-equivalence\1.0\jackson-coreutils-equivalence-1.0.jar;C:\Users\LENOVO\.m2\repository\com\github\java-json-tools\jackson-coreutils\2.0\jackson-coreutils-2.0.jar;C:\Users\LENOVO\.m2\repository\com\github\java-json-tools\msg-simple\1.2\msg-simple-1.2.jar;C:\Users\LENOVO\.m2\repository\com\github\java-json-tools\btf\1.3\btf-1.3.jar;C:\Users\LENOVO\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.14\json-schema-core-1.2.14.jar;C:\Users\LENOVO\.m2\repository\com\github\java-json-tools\uri-template\0.10\uri-template-0.10.jar;C:\Users\LENOVO\.m2\repository\org\mozilla\rhino\1.7.7.2\rhino-1.7.7.2.jar;C:\Users\LENOVO\.m2\repository\com\sun\mail\mailapi\1.6.2\mailapi-1.6.2.jar;C:\Users\LENOVO\.m2\repository\joda-time\joda-time\2.10.5\joda-time-2.10.5.jar;C:\Users\LENOVO\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.11.1\libphonenumber-8.11.1.jar;C:\Users\LENOVO\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\LENOVO\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\LENOVO\.m2\repository\com\aventstack\extentreports\5.1.2\extentreports-5.1.2.jar;C:\Users\LENOVO\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\LENOVO\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\LENOVO\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\LENOVO\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\LENOVO\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\LENOVO\.m2\repository\org\apache\poi\poi\5.5.1\poi-5.5.1.jar;C:\Users\LENOVO\.m2\repository\commons-codec\commons-codec\1.20.0\commons-codec-1.20.0.jar;C:\Users\LENOVO\.m2\repository\org\apache\commons\commons-collections4\4.5.0\commons-collections4-4.5.0.jar;C:\Users\LENOVO\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\LENOVO\.m2\repository\commons-io\commons-io\2.21.0\commons-io-2.21.0.jar;C:\Users\LENOVO\.m2\repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;C:\Users\LENOVO\.m2\repository\org\apache\poi\poi-ooxml\5.5.1\poi-ooxml-5.5.1.jar;C:\Users\LENOVO\.m2\repository\org\apache\poi\poi-ooxml-lite\5.5.1\poi-ooxml-lite-5.5.1.jar;C:\Users\LENOVO\.m2\repository\org\apache\xmlbeans\xmlbeans\5.3.0\xmlbeans-5.3.0.jar;C:\Users\LENOVO\.m2\repository\org\apache\commons\commons-compress\1.28.0\commons-compress-1.28.0.jar;C:\Users\LENOVO\.m2\repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;C:\Users\LENOVO\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\LENOVO\.m2\repository\org\apache\commons\commons-lang3\3.5\commons-lang3-3.5.jar;C:\Users\LENOVO\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\LENOVO\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\LENOVO\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\LENOVO\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.0\jackson-databind-2.17.0.jar;C:\Users\LENOVO\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.0\jackson-annotations-2.17.0.jar;C:\Users\LENOVO\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.0\jackson-core-2.17.0.jar;C:\Users\LENOVO\.m2\repository\net\bytebuddy\byte-buddy\1.14.9\byte-buddy-1.14.9.jar;C:\Users\LENOVO\.m2\repository\org\apache\logging\log4j\log4j-api\2.24.1\log4j-api-2.24.1.jar;C:\Users\LENOVO\.m2\repository\org\apache\logging\log4j\log4j-core\2.24.1\log4j-core-2.24.1.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="Asia/Dhaka"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="D:\Software\Study Software\sts-4.20.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.8.v20230831-1047\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\LENOVO\AppData\Local\Temp\surefire2131536543402396742\surefirebooter-20260501193425718_3.jar C:\Users\LENOVO\AppData\Local\Temp\surefire2131536543402396742 2026-05-01T19-34-25_155-jvmRun1 surefire-20260501193425718_1tmp surefire_0-20260501193425718_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="D:\PersonalSpace\PracticeSpace\Rest Assured\EventHubAPI\target\test-classes;D:\PersonalSpace\PracticeSpace\Rest Assured\EventHubAPI\target\classes;C:\Users\LENOVO\.m2\repository\io\rest-assured\rest-assured\6.0.0\rest-assured-6.0.0.jar;C:\Users\LENOVO\.m2\repository\org\apache\groovy\groovy\5.0.3\groovy-5.0.3.jar;C:\Users\LENOVO\.m2\repository\org\apache\groovy\groovy-xml\5.0.3\groovy-xml-5.0.3.jar;C:\Users\LENOVO\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\LENOVO\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\LENOVO\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\LENOVO\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\LENOVO\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\LENOVO\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\LENOVO\.m2\repository\io\rest-assured\json-path\6.0.0\json-path-6.0.0.jar;C:\Users\LENOVO\.m2\repository\org\apache\groovy\groovy-json\5.0.3\groovy-json-5.0.3.jar;C:\Users\LENOVO\.m2\repository\io\rest-assured\rest-assured-common\6.0.0\rest-assured-common-6.0.0.jar;C:\Users\LENOVO\.m2\repository\io\rest-assured\xml-path\6.0.0\xml-path-6.0.0.jar;C:\Users\LENOVO\.m2\repository\com\jayway\jsonpath\json-path\3.0.0\json-path-3.0.0.jar;C:\Users\LENOVO\.m2\repository\net\minidev\json-smart\2.6.0\json-smart-2.6.0.jar;C:\Users\LENOVO\.m2\repository\net\minidev\accessors-smart\2.6.0\accessors-smart-2.6.0.jar;C:\Users\LENOVO\.m2\repository\org\ow2\asm\asm\9.7.1\asm-9.7.1.jar;C:\Users\LENOVO\.m2\repository\org\slf4j\slf4j-api\2.0.17\slf4j-api-2.0.17.jar;C:\Users\LENOVO\.m2\repository\org\json\json\20251224\json-20251224.jar;C:\Users\LENOVO\.m2\repository\org\testng\testng\7.12.0\testng-7.12.0.jar;C:\Users\LENOVO\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\LENOVO\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\LENOVO\.m2\repository\com\github\scribejava\scribejava-apis\8.3.3\scribejava-apis-8.3.3.jar;C:\Users\LENOVO\.m2\repository\com\github\scribejava\scribejava-core\8.3.3\scribejava-core-8.3.3.jar;C:\Users\LENOVO\.m2\repository\com\github\scribejava\scribejava-java8\8.3.3\scribejava-java8-8.3.3.jar;C:\Users\LENOVO\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.14\json-schema-validator-2.2.14.jar;C:\Users\LENOVO\.m2\repository\com\google\guava\guava\28.2-android\guava-28.2-android.jar;C:\Users\LENOVO\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\LENOVO\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\LENOVO\.m2\repository\org\checkerframework\checker-compat-qual\2.5.5\checker-compat-qual-2.5.5.jar;C:\Users\LENOVO\.m2\repository\com\google\errorprone\error_prone_annotations\2.3.4\error_prone_annotations-2.3.4.jar;C:\Users\LENOVO\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\LENOVO\.m2\repository\com\github\java-json-tools\jackson-coreutils-equivalence\1.0\jackson-coreutils-equivalence-1.0.jar;C:\Users\LENOVO\.m2\repository\com\github\java-json-tools\jackson-coreutils\2.0\jackson-coreutils-2.0.jar;C:\Users\LENOVO\.m2\repository\com\github\java-json-tools\msg-simple\1.2\msg-simple-1.2.jar;C:\Users\LENOVO\.m2\repository\com\github\java-json-tools\btf\1.3\btf-1.3.jar;C:\Users\LENOVO\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.14\json-schema-core-1.2.14.jar;C:\Users\LENOVO\.m2\repository\com\github\java-json-tools\uri-template\0.10\uri-template-0.10.jar;C:\Users\LENOVO\.m2\repository\org\mozilla\rhino\1.7.7.2\rhino-1.7.7.2.jar;C:\Users\LENOVO\.m2\repository\com\sun\mail\mailapi\1.6.2\mailapi-1.6.2.jar;C:\Users\LENOVO\.m2\repository\joda-time\joda-time\2.10.5\joda-time-2.10.5.jar;C:\Users\LENOVO\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.11.1\libphonenumber-8.11.1.jar;C:\Users\LENOVO\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\LENOVO\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\LENOVO\.m2\repository\com\aventstack\extentreports\5.1.2\extentreports-5.1.2.jar;C:\Users\LENOVO\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\LENOVO\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\LENOVO\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\LENOVO\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\LENOVO\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\LENOVO\.m2\repository\org\apache\poi\poi\5.5.1\poi-5.5.1.jar;C:\Users\LENOVO\.m2\repository\commons-codec\commons-codec\1.20.0\commons-codec-1.20.0.jar;C:\Users\LENOVO\.m2\repository\org\apache\commons\commons-collections4\4.5.0\commons-collections4-4.5.0.jar;C:\Users\LENOVO\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\LENOVO\.m2\repository\commons-io\commons-io\2.21.0\commons-io-2.21.0.jar;C:\Users\LENOVO\.m2\repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;C:\Users\LENOVO\.m2\repository\org\apache\poi\poi-ooxml\5.5.1\poi-ooxml-5.5.1.jar;C:\Users\LENOVO\.m2\repository\org\apache\poi\poi-ooxml-lite\5.5.1\poi-ooxml-lite-5.5.1.jar;C:\Users\LENOVO\.m2\repository\org\apache\xmlbeans\xmlbeans\5.3.0\xmlbeans-5.3.0.jar;C:\Users\LENOVO\.m2\repository\org\apache\commons\commons-compress\1.28.0\commons-compress-1.28.0.jar;C:\Users\LENOVO\.m2\repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;C:\Users\LENOVO\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\LENOVO\.m2\repository\org\apache\commons\commons-lang3\3.5\commons-lang3-3.5.jar;C:\Users\LENOVO\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\LENOVO\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\LENOVO\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\LENOVO\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.0\jackson-databind-2.17.0.jar;C:\Users\LENOVO\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.0\jackson-annotations-2.17.0.jar;C:\Users\LENOVO\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.0\jackson-core-2.17.0.jar;C:\Users\LENOVO\.m2\repository\net\bytebuddy\byte-buddy\1.14.9\byte-buddy-1.14.9.jar;C:\Users\LENOVO\.m2\repository\org\apache\logging\log4j\log4j-api\2.24.1\log4j-api-2.24.1.jar;C:\Users\LENOVO\.m2\repository\org\apache\logging\log4j\log4j-core\2.24.1\log4j-core-2.24.1.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\LENOVO"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-08-24"/>
+    <property name="java.home" value="D:\Software\Study Software\sts-4.20.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.8.v20230831-1047\jre"/>
+    <property name="file.separator" value="\"/>
+    <property name="style.color" value="always"/>
+    <property name="basedir" value="D:\PersonalSpace\PracticeSpace\Rest Assured\EventHubAPI"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\LENOVO\AppData\Local\Temp\surefire2131536543402396742\surefirebooter-20260501193425718_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.8.1+1"/>
+    <property name="user.name" value="LENOVO"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-17.0.8.1+1"/>
+    <property name="localRepository" value="C:\Users\LENOVO\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\LENOVO\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.8.1"/>
+    <property name="user.dir" value="D:\PersonalSpace\PracticeSpace\Rest Assured\EventHubAPI"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="D:\Software\Study Software\sts-4.20.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.8.v20230831-1047\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:/Software/Study Software/sts-4.20.0.RELEASE//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.8.v20230831-1047/jre/bin/server;D:/Software/Study Software/sts-4.20.0.RELEASE//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.8.v20230831-1047/jre/bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Python311\Scripts\;C:\Python311\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs\node_modules\npm\bin;C:\Program Files\Java\jdk-11\bin;C:\apache-maven-3.9.4\bin;C:\apache-jmeter-5.5\apache-jmeter-5.5\bin;C:\Users\LENOVO\AppData\Local\Android\Sdk\emulator;C:\Users\LENOVO\AppData\Local\Android\Sdk\tools;C:\Users\LENOVO\AppData\Local\Android\Sdk\platform-tools;C:\Users\LENOVO\AppData\Local\Android\Sdk\tools\bin;C:\Program Files\Java\jdk-21.0.10\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\LENOVO\AppData\Local\Microsoft\WindowsApps;;C:\Users\LENOVO\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\LENOVO\AppData\Roaming\npm;C:\Program Files (x86)\Nmap;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.3.5\bin;;D:\Software\Study Software\sts-4.20.0.RELEASE;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="17.0.8.1+1"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="testPostUser" classname="api.tests.AuthTests" time="4.914">
+    <system-out><![CDATA[HTTP/1.1 201 Created
+Date: Fri, 01 May 2026 13:34:28 GMT
+Server: Apache/2.4.52 (Ubuntu)
+X-Powered-By: Express
+Access-Control-Allow-Origin: https://eventhub.rahulshettyacademy.com
+Vary: Origin
+Access-Control-Allow-Credentials: true
+Content-Type: application/json; charset=utf-8
+Content-Length: 260
+ETag: W/"104-czYC19JcFA8Yj265BIQvG3EHR4A"
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+
+{
+    "success": true,
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjcyODAsImVtYWlsIjoibm9sYS5mYXlAZ21haWwuY29tIiwiaWF0IjoxNzc3NjQyNDY4LCJleHAiOjE3NzgyNDcyNjh9.qti8aPjITelKfqLgFiRmuATuFByndszb5igx7y5K5vY",
+    "user": {
+        "id": 7280,
+        "email": "nola.fay@gmail.com"
+    }
+}
+]]></system-out>
+    <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+]]></system-err>
+  </testcase>
+  <testcase name="testPostLoginUser[org.testng.TestRunner@5dc9d25a](1)" classname="api.tests.AuthTests" time="0.325">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Date: Fri, 01 May 2026 13:34:29 GMT
+Server: Apache/2.4.52 (Ubuntu)
+X-Powered-By: Express
+Access-Control-Allow-Origin: https://eventhub.rahulshettyacademy.com
+Vary: Origin
+Access-Control-Allow-Credentials: true
+Content-Type: application/json; charset=utf-8
+Content-Length: 260
+ETag: W/"104-F/NkbeB49/ysCgJhDRhQwzvyCaw"
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+
+{
+    "success": true,
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjcyODAsImVtYWlsIjoibm9sYS5mYXlAZ21haWwuY29tIiwiaWF0IjoxNzc3NjQyNDY5LCJleHAiOjE3NzgyNDcyNjl9.k3cmSR2wchqDjtf33CmQF5rO1S7BaZkBq0NJTHmNgj0",
+    "user": {
+        "id": 7280,
+        "email": "nola.fay@gmail.com"
+    }
+}
+The bearer token after login : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjcyODAsImVtYWlsIjoibm9sYS5mYXlAZ21haWwuY29tIiwiaWF0IjoxNzc3NjQyNDY5LCJleHAiOjE3NzgyNDcyNjl9.k3cmSR2wchqDjtf33CmQF5rO1S7BaZkBq0NJTHmNgj0
+]]></system-out>
+  </testcase>
+  <testcase name="testAuthenticateUser" classname="api.tests.AuthTests" time="0.317">
+    <system-out><![CDATA[The bearer token in testAuthenticateUser: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjcyODAsImVtYWlsIjoibm9sYS5mYXlAZ21haWwuY29tIiwiaWF0IjoxNzc3NjQyNDY5LCJleHAiOjE3NzgyNDcyNjl9.k3cmSR2wchqDjtf33CmQF5rO1S7BaZkBq0NJTHmNgj0
+HTTP/1.1 200 OK
+Date: Fri, 01 May 2026 13:34:29 GMT
+Server: Apache/2.4.52 (Ubuntu)
+X-Powered-By: Express
+Access-Control-Allow-Origin: https://eventhub.rahulshettyacademy.com
+Vary: Origin
+Access-Control-Allow-Credentials: true
+Content-Type: application/json; charset=utf-8
+Content-Length: 102
+ETag: W/"66-/Xko5tNwRbgm90WTc2mNM8Zlojk"
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+
+{
+    "success": true,
+    "user": {
+        "userId": 7280,
+        "email": "nola.fay@gmail.com",
+        "iat": 1777642469,
+        "exp": 1778247269
+    }
+}
+]]></system-out>
+  </testcase>
+  <testcase name="test_create_booking[org.testng.TestRunner@5dc9d25a](1)" classname="api.tests.BookingTests" time="0.26">
+    <system-out><![CDATA[TOKEN: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjcyODAsImVtYWlsIjoibm9sYS5mYXlAZ21haWwuY29tIiwiaWF0IjoxNzc3NjQyNDY5LCJleHAiOjE3NzgyNDcyNjl9.k3cmSR2wchqDjtf33CmQF5rO1S7BaZkBq0NJTHmNgj0
+HTTP/1.1 201 Created
+Date: Fri, 01 May 2026 13:34:29 GMT
+Server: Apache/2.4.52 (Ubuntu)
+X-Powered-By: Express
+Access-Control-Allow-Origin: https://eventhub.rahulshettyacademy.com
+Vary: Origin
+Access-Control-Allow-Credentials: true
+Content-Type: application/json; charset=utf-8
+Content-Length: 1030
+ETag: W/"406-6g2uWNBcIUP+Qmy8O/W6uDyDETY"
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+
+{
+    "success": true,
+    "data": {
+        "id": 27872,
+        "eventId": 1,
+        "userId": 7280,
+        "customerName": "Drew Windler V",
+        "customerEmail": "audry.stark@hotmail.com",
+        "customerPhone": "+880182941797",
+        "quantity": 4,
+        "totalPrice": "6000",
+        "status": "confirmed",
+        "bookingRef": "W-5REKOH",
+        "createdAt": "2026-05-01T13:34:29.980Z",
+        "updatedAt": "2026-05-01T13:34:29.980Z",
+        "event": {
+            "id": 1,
+            "title": "World Tech Summit",
+            "description": "A premier technology conference bringing together 500+ industry leaders, startup founders, and engineers for two days of keynotes, workshops, and networking. Topics include AI/ML, cloud infrastructure, DevSecOps, and the future of the Indian tech ecosystem.",
+            "category": "Conference",
+            "venue": "Hyderabad, Hitech city",
+            "city": "Hyderabad",
+            "eventDate": "2026-04-18T09:00:00.000Z",
+            "price": "1500",
+            "totalSeats": 500,
+            "availableSeats": 238,
+            "imageUrl": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800",
+            "isStatic": true,
+            "userId": null,
+            "createdAt": "2026-02-22T23:03:37.659Z",
+            "updatedAt": "2026-05-01T11:06:37.855Z"
+        }
+    },
+    "message": "Booking confirmed!"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="test_read_booking_by_id[org.testng.TestRunner@5dc9d25a](1)" classname="api.tests.BookingTests" time="0.176">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Date: Fri, 01 May 2026 13:34:30 GMT
+Server: Apache/2.4.52 (Ubuntu)
+X-Powered-By: Express
+Access-Control-Allow-Origin: https://eventhub.rahulshettyacademy.com
+Vary: Origin
+Access-Control-Allow-Credentials: true
+Content-Type: application/json; charset=utf-8
+Content-Length: 999
+ETag: W/"3e7-PfvC0UgZRAKLM8jWWRGyQe9CYvE"
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+
+{
+    "success": true,
+    "data": {
+        "id": 27872,
+        "eventId": 1,
+        "userId": 7280,
+        "customerName": "Drew Windler V",
+        "customerEmail": "audry.stark@hotmail.com",
+        "customerPhone": "+880182941797",
+        "quantity": 4,
+        "totalPrice": "6000",
+        "status": "confirmed",
+        "bookingRef": "W-5REKOH",
+        "createdAt": "2026-05-01T13:34:29.980Z",
+        "updatedAt": "2026-05-01T13:34:29.980Z",
+        "event": {
+            "id": 1,
+            "title": "World Tech Summit",
+            "description": "A premier technology conference bringing together 500+ industry leaders, startup founders, and engineers for two days of keynotes, workshops, and networking. Topics include AI/ML, cloud infrastructure, DevSecOps, and the future of the Indian tech ecosystem.",
+            "category": "Conference",
+            "venue": "Hyderabad, Hitech city",
+            "city": "Hyderabad",
+            "eventDate": "2026-04-18T09:00:00.000Z",
+            "price": "1500",
+            "totalSeats": 500,
+            "availableSeats": 238,
+            "imageUrl": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800",
+            "isStatic": true,
+            "userId": null,
+            "createdAt": "2026-02-22T23:03:37.659Z",
+            "updatedAt": "2026-05-01T11:06:37.855Z"
+        }
+    }
+}
+]]></system-out>
+  </testcase>
+  <testcase name="test_read_booking_by_ref[org.testng.TestRunner@5dc9d25a](1)" classname="api.tests.BookingTests" time="0.157">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Date: Fri, 01 May 2026 13:34:30 GMT
+Server: Apache/2.4.52 (Ubuntu)
+X-Powered-By: Express
+Access-Control-Allow-Origin: https://eventhub.rahulshettyacademy.com
+Vary: Origin
+Access-Control-Allow-Credentials: true
+Content-Type: application/json; charset=utf-8
+Content-Length: 999
+ETag: W/"3e7-PfvC0UgZRAKLM8jWWRGyQe9CYvE"
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+
+{
+    "success": true,
+    "data": {
+        "id": 27872,
+        "eventId": 1,
+        "userId": 7280,
+        "customerName": "Drew Windler V",
+        "customerEmail": "audry.stark@hotmail.com",
+        "customerPhone": "+880182941797",
+        "quantity": 4,
+        "totalPrice": "6000",
+        "status": "confirmed",
+        "bookingRef": "W-5REKOH",
+        "createdAt": "2026-05-01T13:34:29.980Z",
+        "updatedAt": "2026-05-01T13:34:29.980Z",
+        "event": {
+            "id": 1,
+            "title": "World Tech Summit",
+            "description": "A premier technology conference bringing together 500+ industry leaders, startup founders, and engineers for two days of keynotes, workshops, and networking. Topics include AI/ML, cloud infrastructure, DevSecOps, and the future of the Indian tech ecosystem.",
+            "category": "Conference",
+            "venue": "Hyderabad, Hitech city",
+            "city": "Hyderabad",
+            "eventDate": "2026-04-18T09:00:00.000Z",
+            "price": "1500",
+            "totalSeats": 500,
+            "availableSeats": 238,
+            "imageUrl": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800",
+            "isStatic": true,
+            "userId": null,
+            "createdAt": "2026-02-22T23:03:37.659Z",
+            "updatedAt": "2026-05-01T11:06:37.855Z"
+        }
+    }
+}
+]]></system-out>
+  </testcase>
+  <testcase name="test_delete_booking[org.testng.TestRunner@5dc9d25a](1)" classname="api.tests.BookingTests" time="0.209">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Date: Fri, 01 May 2026 13:34:30 GMT
+Server: Apache/2.4.52 (Ubuntu)
+X-Powered-By: Express
+Access-Control-Allow-Origin: https://eventhub.rahulshettyacademy.com
+Vary: Origin
+Access-Control-Allow-Credentials: true
+Content-Type: application/json; charset=utf-8
+Content-Length: 46
+ETag: W/"2e-ZzefWV9z74FsUotarh0dpXKMDns"
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+
+{
+    "success": true,
+    "message": "Booking cancelled"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="testPostEvent[org.testng.TestRunner@5dc9d25a](1)" classname="api.tests.EventTests" time="0.248">
+    <system-out><![CDATA[Test Post Event eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjcyODAsImVtYWlsIjoibm9sYS5mYXlAZ21haWwuY29tIiwiaWF0IjoxNzc3NjQyNDY5LCJleHAiOjE3NzgyNDcyNjl9.k3cmSR2wchqDjtf33CmQF5rO1S7BaZkBq0NJTHmNgj0
+HTTP/1.1 201 Created
+Date: Fri, 01 May 2026 13:34:30 GMT
+Server: Apache/2.4.52 (Ubuntu)
+X-Powered-By: Express
+Access-Control-Allow-Origin: https://eventhub.rahulshettyacademy.com
+Vary: Origin
+Access-Control-Allow-Credentials: true
+Content-Type: application/json; charset=utf-8
+Content-Length: 481
+ETag: W/"1e1-GKOKTF4ZnRWNBA1CSc+ob37eMHM"
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+
+{
+    "success": true,
+    "data": {
+        "id": 27981,
+        "title": "Blue Remembered Earth",
+        "description": "Voluptatum assumenda et sunt.",
+        "category": "Home, Music & Outdoors",
+        "venue": "Herman LLC",
+        "city": "Marnihaven",
+        "eventDate": "2026-06-15T09:00:00.000Z",
+        "price": "367",
+        "totalSeats": 89,
+        "availableSeats": 89,
+        "imageUrl": "http://lorempixel.com/1920/1200/nature/",
+        "isStatic": false,
+        "userId": 7280,
+        "createdAt": "2026-05-01T13:34:30.945Z",
+        "updatedAt": "2026-05-01T13:34:30.945Z"
+    },
+    "message": "Event created successfully"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="testGetEvent[org.testng.TestRunner@5dc9d25a](1)" classname="api.tests.EventTests" time="0.172">
+    <system-out><![CDATA[Test Post Event eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjcyODAsImVtYWlsIjoibm9sYS5mYXlAZ21haWwuY29tIiwiaWF0IjoxNzc3NjQyNDY5LCJleHAiOjE3NzgyNDcyNjl9.k3cmSR2wchqDjtf33CmQF5rO1S7BaZkBq0NJTHmNgj0
+HTTP/1.1 200 OK
+Date: Fri, 01 May 2026 13:34:31 GMT
+Server: Apache/2.4.52 (Ubuntu)
+X-Powered-By: Express
+Access-Control-Allow-Origin: https://eventhub.rahulshettyacademy.com
+Vary: Origin
+Access-Control-Allow-Credentials: true
+Content-Type: application/json; charset=utf-8
+Content-Length: 442
+ETag: W/"1ba-r7kEp5dKqdJcD0D2ZZgaLhMrKG8"
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+
+{
+    "success": true,
+    "data": {
+        "id": 27981,
+        "title": "Blue Remembered Earth",
+        "description": "Voluptatum assumenda et sunt.",
+        "category": "Home, Music & Outdoors",
+        "venue": "Herman LLC",
+        "city": "Marnihaven",
+        "eventDate": "2026-06-15T09:00:00.000Z",
+        "price": "367",
+        "totalSeats": 89,
+        "availableSeats": 89,
+        "imageUrl": "http://lorempixel.com/1920/1200/nature/",
+        "isStatic": false,
+        "userId": 7280,
+        "createdAt": "2026-05-01T13:34:30.945Z",
+        "updatedAt": "2026-05-01T13:34:30.945Z"
+    }
+}
+]]></system-out>
+  </testcase>
+  <testcase name="testUpdateEvent[org.testng.TestRunner@5dc9d25a](1)" classname="api.tests.EventTests" time="0.246">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Date: Fri, 01 May 2026 13:34:31 GMT
+Server: Apache/2.4.52 (Ubuntu)
+X-Powered-By: Express
+Access-Control-Allow-Origin: https://eventhub.rahulshettyacademy.com
+Vary: Origin
+Access-Control-Allow-Credentials: true
+Content-Type: application/json; charset=utf-8
+Content-Length: 494
+ETag: W/"1ee-841NnwjooujSjpwGsaOQQgGR3E4"
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+
+{
+    "success": true,
+    "data": {
+        "id": 27981,
+        "title": "Fear and Trembling",
+        "description": "Sunt nostrum doloremque reiciendis.",
+        "category": "Beauty",
+        "venue": "Bergstrom, Schumm and Baumbach",
+        "city": "Denesikmouth",
+        "eventDate": "2026-06-15T09:00:00.000Z",
+        "price": "720",
+        "totalSeats": 149,
+        "availableSeats": 89,
+        "imageUrl": "http://lorempixel.com/g/1366/768/technics/",
+        "isStatic": false,
+        "userId": 7280,
+        "createdAt": "2026-05-01T13:34:30.945Z",
+        "updatedAt": "2026-05-01T13:34:31.381Z"
+    },
+    "message": "Event updated successfully"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="testDeleteEvent[org.testng.TestRunner@5dc9d25a](1)" classname="api.tests.EventTests" time="0.171">
+    <system-out><![CDATA[HTTP/1.1 200 OK
+Date: Fri, 01 May 2026 13:34:31 GMT
+Server: Apache/2.4.52 (Ubuntu)
+X-Powered-By: Express
+Access-Control-Allow-Origin: https://eventhub.rahulshettyacademy.com
+Vary: Origin
+Access-Control-Allow-Credentials: true
+Content-Type: application/json; charset=utf-8
+Content-Length: 55
+ETag: W/"37-Qo9mb78Y7s+pUu+WpmJap/uNXdc"
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+
+{
+    "success": true,
+    "message": "Event deleted successfully"
+}
+]]></system-out>
+  </testcase>
+</testsuite>

@@ -1,0 +1,135 @@
+<html>
+<head>
+<title>TestNG:  Surefire test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Surefire test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>11/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri May 01 19:34:27 BDT 2026</td>
+</tr>
+<tr><td>Total time:</td><td>7 seconds (7923 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='api.tests.BookingTests.test_read_booking_by_ref()'><b>test_read_booking_by_ref</b><br>Test class: api.tests.BookingTests<br>Parameters: org.testng.TestRunner@5dc9d25a</td>
+<td></td>
+<td>0</td>
+<td>api.tests.BookingTests@625732</td></tr>
+<tr>
+<td title='api.tests.EventTests.testGetEvent()'><b>testGetEvent</b><br>Test class: api.tests.EventTests<br>Parameters: org.testng.TestRunner@5dc9d25a</td>
+<td></td>
+<td>0</td>
+<td>api.tests.EventTests@51dcb805</td></tr>
+<tr>
+<td title='api.tests.EventTests.testPostEvent()'><b>testPostEvent</b><br>Test class: api.tests.EventTests<br>Parameters: org.testng.TestRunner@5dc9d25a</td>
+<td></td>
+<td>0</td>
+<td>api.tests.EventTests@51dcb805</td></tr>
+<tr>
+<td title='api.tests.BookingTests.test_read_booking_by_id()'><b>test_read_booking_by_id</b><br>Test class: api.tests.BookingTests<br>Parameters: org.testng.TestRunner@5dc9d25a</td>
+<td></td>
+<td>0</td>
+<td>api.tests.BookingTests@625732</td></tr>
+<tr>
+<td title='api.tests.BookingTests.test_delete_booking()'><b>test_delete_booking</b><br>Test class: api.tests.BookingTests<br>Parameters: org.testng.TestRunner@5dc9d25a</td>
+<td></td>
+<td>0</td>
+<td>api.tests.BookingTests@625732</td></tr>
+<tr>
+<td title='api.tests.AuthTests.testPostLoginUser()'><b>testPostLoginUser</b><br>Test class: api.tests.AuthTests<br>Parameters: org.testng.TestRunner@5dc9d25a</td>
+<td></td>
+<td>0</td>
+<td>api.tests.AuthTests@a3d8174</td></tr>
+<tr>
+<td title='api.tests.AuthTests.testAuthenticateUser()'><b>testAuthenticateUser</b><br>Test class: api.tests.AuthTests</td>
+<td></td>
+<td>0</td>
+<td>api.tests.AuthTests@a3d8174</td></tr>
+<tr>
+<td title='api.tests.EventTests.testUpdateEvent()'><b>testUpdateEvent</b><br>Test class: api.tests.EventTests<br>Parameters: org.testng.TestRunner@5dc9d25a</td>
+<td></td>
+<td>0</td>
+<td>api.tests.EventTests@51dcb805</td></tr>
+<tr>
+<td title='api.tests.BookingTests.test_create_booking()'><b>test_create_booking</b><br>Test class: api.tests.BookingTests<br>Parameters: org.testng.TestRunner@5dc9d25a</td>
+<td></td>
+<td>0</td>
+<td>api.tests.BookingTests@625732</td></tr>
+<tr>
+<td title='api.tests.EventTests.testDeleteEvent()'><b>testDeleteEvent</b><br>Test class: api.tests.EventTests<br>Parameters: org.testng.TestRunner@5dc9d25a</td>
+<td></td>
+<td>0</td>
+<td>api.tests.EventTests@51dcb805</td></tr>
+<tr>
+<td title='api.tests.AuthTests.testPostUser()'><b>testPostUser</b><br>Test class: api.tests.AuthTests</td>
+<td></td>
+<td>4</td>
+<td>api.tests.AuthTests@a3d8174</td></tr>
+</table><p>
+</body>
+</html>
