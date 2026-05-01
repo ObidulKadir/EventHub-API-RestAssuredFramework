@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="AuthTest(failed)">
+  <listeners>
+    <listener class-name="api.utilities.ExtentReportManager"/>
+  </listeners>
+  <test thread-count="5" name="BookingTest(failed)">
     <classes>
-      <class name="api.tests.AuthTests">
+      <class name="api.tests.BookingTests">
         <methods>
+          <include name="test_read_booking_by_id"/>
+          <include name="test_create_booking" invocation-numbers="0"/>
+          <include name="test_read_booking_by_ref"/>
+          <include name="test_delete_booking"/>
           <include name="setup_data"/>
-          <include name="testPostUser"/>
-          <include name="testAuthenticateUser"/>
-          <include name="testPostLoginUser"/>
         </methods>
-      </class> <!-- api.tests.AuthTests -->
+      </class> <!-- api.tests.BookingTests -->
     </classes>
-  </test> <!-- AuthTest(failed) -->
+  </test> <!-- BookingTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

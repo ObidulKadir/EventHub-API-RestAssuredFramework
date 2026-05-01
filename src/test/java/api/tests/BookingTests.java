@@ -27,7 +27,7 @@ public class BookingTests {
 		faker = new Faker();
 		bookingPayload = new BookingPayload();
 
-		bookingPayload.setEventId(faker.number().numberBetween(1, 10));
+		bookingPayload.setEventId(1);
 		bookingPayload.setCustomerName(faker.name().fullName());
 		bookingPayload.setCustomerEmail(faker.internet().emailAddress());
 		bookingPayload.setCustomerPhone("+8801" + faker.number().digits(8));

@@ -1,9 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test name="AuthTest">
-    <classes>
-      <class name="api.tests.AuthTests"/>
-    </classes>
-  </test> <!-- AuthTest -->
-</suite> <!-- Suite -->
+	<listeners>
+		<listener class-name="api.utilities.ExtentReportManager"></listener>
+	</listeners>
+	<test name="AuthTest">
+		<classes>
+			<class name="api.tests.AuthTests" />
+		</classes>
+	</test> <!--
+	AuthTest -->
+
+	<test name="EventTest">
+		<classes>
+			<class name="api.tests.EventTests" />
+		</classes>
+	</test> <!--
+	EventTest -->
+
+	<test name="BookingTest">
+		<classes>
+			<class name="api.tests.BookingTests" />
+		</classes>
+	</test> <!--
+	BookingTest -->
+
+</suite> <!--
+Suite -->
