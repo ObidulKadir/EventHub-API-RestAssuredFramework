@@ -1,9 +1,5 @@
 package api.tests;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.concurrent.TimeUnit;
-
 import org.testng.Assert;
 import org.testng.ITestContext;
 import org.testng.annotations.BeforeClass;
@@ -11,7 +7,6 @@ import org.testng.annotations.Test;
 
 import com.github.javafaker.Faker;
 
-import api.endpoints.AuthEndpoints;
 import api.endpoints.EventsApiEndpoints;
 import api.payload.EventPayload;
 import io.restassured.response.Response;
@@ -59,7 +54,7 @@ public class EventTests {
 		Assert.assertEquals(response.getStatusCode(), 201);
 		Assert.assertEquals(response.jsonPath().getBoolean("success"), true);
 		event_id = response.jsonPath().getInt("data.id");
-		
+
 		context.getSuite().setAttribute("event_id", event_id);
 	}
 
