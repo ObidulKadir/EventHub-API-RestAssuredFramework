@@ -59,6 +59,8 @@ public class EventTests {
 		Assert.assertEquals(response.getStatusCode(), 201);
 		Assert.assertEquals(response.jsonPath().getBoolean("success"), true);
 		event_id = response.jsonPath().getInt("data.id");
+		
+		context.getSuite().setAttribute("event_id", event_id);
 	}
 
 	@Test(priority = 2, dependsOnMethods = { "testPostEvent" })

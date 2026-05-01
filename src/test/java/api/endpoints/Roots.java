@@ -19,10 +19,10 @@ public class Roots {
 
 // Bookings
 	
-	String create_booking_url = base_url + "/bookings";
-	String read_bookingByReference_url = base_url + "/bookings/ref/{bookingRef}";
-	String read_booking_url = base_url + "/bookings/{bookingId}";
-	String deleteBook_url = base_url + "/bookings/{bookingId}";
+	public static String create_booking_url = "https://api.eventhub.rahulshettyacademy.com/api/bookings";
+	public static String read_bookingByReference_url = base_url + "/bookings/ref/{bookingRef}";
+	public static String read_booking_url = base_url + "/bookings/{bookingId}";
+	public static  String deleteBook_url = base_url + "/bookings/{bookingId}";
 	
 
 }
