@@ -12,10 +12,10 @@ public class Roots {
 
 // Event  module
 	
-	public static String create_event = base_url +"/events";
-	public static String read_event = base_url + "/events/{eventId}";
-	public static String update_event = base_url + "/events/{eventId}";
-	public static String delete_event = base_url + "/events/{eventId}";
+	public static String create_event_url = base_url +"/events";
+	public static String read_event_url= base_url + "/events/{eventId}";
+	public static String update_event_url = base_url + "/events/{eventId}";
+	public static String delete_event_url= base_url + "/events/{eventId}";
 
 // Bookings
 	
