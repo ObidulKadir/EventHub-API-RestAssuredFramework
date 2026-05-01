@@ -54,6 +54,7 @@ public class AuthTests {
 		Assert.assertEquals(response.getStatusCode(), 200);
 		Assert.assertEquals(response.jsonPath().getBoolean("success"), true);
 		bearer_token = response.jsonPath().getString("token");
+		
 		context.getSuite().setAttribute("bearer_token", bearer_token);
 		
 		System.out.println("The bearer token after login : "+bearer_token);
