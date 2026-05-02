@@ -1,0 +1,54 @@
+2026-05-02 10:52:15 DEBUG AuthTests:31 - ------------Debuging--------------
+2026-05-02 10:52:15 INFO  AuthTests:32 - ===== Setup Data Started =====
+2026-05-02 10:52:15 INFO  AuthTests:42 - Generated Email: steve.conn@hotmail.com
+2026-05-02 10:52:15 INFO  AuthTests:43 - Generated Password: Anthony98.0
+2026-05-02 10:52:15 INFO  AuthTests:45 - ===== Setup Data Completed =====
+2026-05-02 10:52:15 INFO  AuthTests:51 - ************* Creating User ***************
+2026-05-02 10:52:17 INFO  AuthTests:55 - Request sent for user registration
+2026-05-02 10:52:17 INFO  AuthTests:58 - Validating response for user creation
+2026-05-02 10:52:17 INFO  AuthTests:63 - ************* User Created Successfully ***************
+2026-05-02 10:52:17 INFO  AuthTests:69 - ************* Response Json validate successfully ***************
+2026-05-02 10:52:17 INFO  AuthTests:75 - ************* Logging in User ***************
+2026-05-02 10:52:18 INFO  AuthTests:79 - Login request sent
+2026-05-02 10:52:18 INFO  AuthTests:82 - Validating login response
+2026-05-02 10:52:18 INFO  AuthTests:90 - Bearer Token Generated: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjczMjYsImVtYWlsIjoic3RldmUuY29ubkBob3RtYWlsLmNvbSIsImlhdCI6MTc3NzY5NzUzMywiZXhwIjoxNzc4MzAyMzMzfQ.k5ERI_pr31a0fTYkqyWgbCOdBYz5GdddkobLtXvVLcQ
+2026-05-02 10:52:18 INFO  AuthTests:91 - ************* User Login Successful ***************
+2026-05-02 10:52:18 INFO  AuthTests:97 - ************* Authenticating User ***************
+2026-05-02 10:52:18 INFO  AuthTests:99 - Using Bearer Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjczMjYsImVtYWlsIjoic3RldmUuY29ubkBob3RtYWlsLmNvbSIsImlhdCI6MTc3NzY5NzUzMywiZXhwIjoxNzc4MzAyMzMzfQ.k5ERI_pr31a0fTYkqyWgbCOdBYz5GdddkobLtXvVLcQ
+2026-05-02 10:52:18 INFO  AuthTests:103 - Authentication request sent
+2026-05-02 10:52:18 INFO  AuthTests:106 - Validating authentication response
+2026-05-02 10:52:18 INFO  AuthTests:112 - ************* User Authentication Successful ***************
+2026-05-02 10:52:19 INFO  BookingTests:33 - ===== Booking Test Setup Started =====
+2026-05-02 10:52:19 INFO  BookingTests:44 - Payload Prepared:
+2026-05-02 10:52:19 INFO  BookingTests:45 - Name: Mack Hartmann DDS
+2026-05-02 10:52:19 INFO  BookingTests:46 - Email: devora.nikolaus@gmail.com
+2026-05-02 10:52:19 INFO  BookingTests:47 - Phone: +880193257344
+2026-05-02 10:52:19 INFO  BookingTests:48 - Quantity: 3
+2026-05-02 10:52:19 INFO  BookingTests:50 - ===== Booking Test Setup Completed =====
+2026-05-02 10:52:19 INFO  BookingTests:57 - ************* Create Booking Test Started *************
+2026-05-02 10:52:19 INFO  BookingTests:60 - Using Bearer Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjczMjYsImVtYWlsIjoic3RldmUuY29ubkBob3RtYWlsLmNvbSIsImlhdCI6MTc3NzY5NzUzMywiZXhwIjoxNzc4MzAyMzMzfQ.k5ERI_pr31a0fTYkqyWgbCOdBYz5GdddkobLtXvVLcQ
+2026-05-02 10:52:20 INFO  BookingTests:64 - Create booking request sent
+2026-05-02 10:52:20 INFO  BookingTests:67 - Validating create booking response
+2026-05-02 10:52:20 INFO  BookingTests:75 - Booking Created Successfully
+2026-05-02 10:52:20 INFO  BookingTests:76 - Booking ID: 28133
+2026-05-02 10:52:20 INFO  BookingTests:77 - Booking Ref: W-GKI08D
+2026-05-02 10:52:20 INFO  BookingTests:79 - ************* Create Booking Test Completed *************
+2026-05-02 10:52:20 INFO  BookingTests:86 - ************* Read Booking By ID Test Started *************
+2026-05-02 10:52:20 INFO  BookingTests:89 - Using Bearer Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjczMjYsImVtYWlsIjoic3RldmUuY29ubkBob3RtYWlsLmNvbSIsImlhdCI6MTc3NzY5NzUzMywiZXhwIjoxNzc4MzAyMzMzfQ.k5ERI_pr31a0fTYkqyWgbCOdBYz5GdddkobLtXvVLcQ
+2026-05-02 10:52:20 INFO  BookingTests:90 - Booking ID: 28133
+2026-05-02 10:52:20 INFO  BookingTests:94 - Read booking by ID request sent
+2026-05-02 10:52:20 INFO  BookingTests:97 - Validating response
+2026-05-02 10:52:20 INFO  BookingTests:101 - ************* Read Booking By ID Test Completed *************
+2026-05-02 10:52:20 INFO  BookingTests:108 - ************* Read Booking By Ref Test Started *************
+2026-05-02 10:52:20 INFO  BookingTests:111 - Using Bearer Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjczMjYsImVtYWlsIjoic3RldmUuY29ubkBob3RtYWlsLmNvbSIsImlhdCI6MTc3NzY5NzUzMywiZXhwIjoxNzc4MzAyMzMzfQ.k5ERI_pr31a0fTYkqyWgbCOdBYz5GdddkobLtXvVLcQ
+2026-05-02 10:52:20 INFO  BookingTests:112 - Booking Ref: W-GKI08D
+2026-05-02 10:52:20 INFO  BookingTests:116 - Read booking by reference request sent
+2026-05-02 10:52:20 INFO  BookingTests:119 - Validating response
+2026-05-02 10:52:20 INFO  BookingTests:123 - ************* Read Booking By Ref Test Completed *************
+2026-05-02 10:52:20 INFO  BookingTests:130 - ************* Delete Booking Test Started *************
+2026-05-02 10:52:20 INFO  BookingTests:133 - Using Bearer Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjczMjYsImVtYWlsIjoic3RldmUuY29ubkBob3RtYWlsLmNvbSIsImlhdCI6MTc3NzY5NzUzMywiZXhwIjoxNzc4MzAyMzMzfQ.k5ERI_pr31a0fTYkqyWgbCOdBYz5GdddkobLtXvVLcQ
+2026-05-02 10:52:20 INFO  BookingTests:134 - Booking ID to delete: 28133
+2026-05-02 10:52:20 INFO  BookingTests:138 - Delete booking request sent
+2026-05-02 10:52:20 INFO  BookingTests:141 - Validating delete response
+2026-05-02 10:52:20 INFO  BookingTests:147 - Booking Deleted Successfully
+2026-05-02 10:52:20 INFO  BookingTests:149 - ************* Delete Booking Test Completed *************
