@@ -14,6 +14,7 @@ import com.github.javafaker.Faker;
 
 import api.endpoints.AuthEndpoints;
 import api.payload.AuthPayload;
+import io.restassured.module.jsv.JsonSchemaValidator;
 import io.restassured.response.Response;
 
 public class AuthTests {
@@ -60,9 +61,15 @@ public class AuthTests {
 		Assert.assertEquals(response.jsonPath().getBoolean("success"), true);
 
 		logger.info("************* User Created Successfully ***************");
+		// schema validator
+
+		response.then().assertThat()
+				.body(JsonSchemaValidator.matchesJsonSchemaInClasspath("auth_register_user_response_schema.json"));
+
+		logger.info("************* Response Json validate successfully ***************");
 	}
 
-	@Test(priority = 2 , dependsOnMethods = {"testPostUser"})
+	@Test(priority = 2, dependsOnMethods = { "testPostUser" })
 	public void testPostLoginUser(ITestContext context) {
 
 		logger.info("************* Logging in User ***************");
@@ -84,7 +91,7 @@ public class AuthTests {
 		logger.info("************* User Login Successful ***************");
 	}
 
-	@Test(priority = 3, dependsOnMethods = {"testPostLoginUser"})
+	@Test(priority = 3, dependsOnMethods = { "testPostLoginUser" })
 	public void testAuthenticateUser() {
 
 		logger.info("************* Authenticating User ***************");

@@ -1,0 +1,53 @@
+2026-05-01 20:00:55 DEBUG AuthTests:30 - ------------Debuging--------------
+2026-05-01 20:00:55 INFO  AuthTests:31 - ===== Setup Data Started =====
+2026-05-01 20:00:55 INFO  AuthTests:41 - Generated Email: neville.steuber@hotmail.com
+2026-05-01 20:00:55 INFO  AuthTests:42 - Generated Password: Philomena31.0
+2026-05-01 20:00:55 INFO  AuthTests:44 - ===== Setup Data Completed =====
+2026-05-01 20:00:55 INFO  AuthTests:50 - ************* Creating User ***************
+2026-05-01 20:00:58 INFO  AuthTests:54 - Request sent for user registration
+2026-05-01 20:00:58 INFO  AuthTests:57 - Validating response for user creation
+2026-05-01 20:00:58 INFO  AuthTests:62 - ************* User Created Successfully ***************
+2026-05-01 20:00:58 INFO  AuthTests:68 - ************* Logging in User ***************
+2026-05-01 20:00:58 INFO  AuthTests:72 - Login request sent
+2026-05-01 20:00:58 INFO  AuthTests:75 - Validating login response
+2026-05-01 20:00:58 INFO  AuthTests:83 - Bearer Token Generated: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjcyODgsImVtYWlsIjoibmV2aWxsZS5zdGV1YmVyQGhvdG1haWwuY29tIiwiaWF0IjoxNzc3NjQ0MDU0LCJleHAiOjE3NzgyNDg4NTR9.sIRiVCiRK4DUs9ndTACiMUE2Vwk4aI3xe4lZvqijdas
+2026-05-01 20:00:58 INFO  AuthTests:84 - ************* User Login Successful ***************
+2026-05-01 20:00:58 INFO  AuthTests:90 - ************* Authenticating User ***************
+2026-05-01 20:00:58 INFO  AuthTests:92 - Using Bearer Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjcyODgsImVtYWlsIjoibmV2aWxsZS5zdGV1YmVyQGhvdG1haWwuY29tIiwiaWF0IjoxNzc3NjQ0MDU0LCJleHAiOjE3NzgyNDg4NTR9.sIRiVCiRK4DUs9ndTACiMUE2Vwk4aI3xe4lZvqijdas
+2026-05-01 20:00:59 INFO  AuthTests:96 - Authentication request sent
+2026-05-01 20:00:59 INFO  AuthTests:99 - Validating authentication response
+2026-05-01 20:00:59 INFO  AuthTests:105 - ************* User Authentication Successful ***************
+2026-05-01 20:01:00 INFO  BookingTests:33 - ===== Booking Test Setup Started =====
+2026-05-01 20:01:00 INFO  BookingTests:44 - Payload Prepared:
+2026-05-01 20:01:00 INFO  BookingTests:45 - Name: Antionette Hirthe
+2026-05-01 20:01:00 INFO  BookingTests:46 - Email: tawny.jacobs@gmail.com
+2026-05-01 20:01:00 INFO  BookingTests:47 - Phone: +880108588844
+2026-05-01 20:01:00 INFO  BookingTests:48 - Quantity: 4
+2026-05-01 20:01:00 INFO  BookingTests:50 - ===== Booking Test Setup Completed =====
+2026-05-01 20:01:00 INFO  BookingTests:57 - ************* Create Booking Test Started *************
+2026-05-01 20:01:00 INFO  BookingTests:60 - Using Bearer Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjcyODgsImVtYWlsIjoibmV2aWxsZS5zdGV1YmVyQGhvdG1haWwuY29tIiwiaWF0IjoxNzc3NjQ0MDU0LCJleHAiOjE3NzgyNDg4NTR9.sIRiVCiRK4DUs9ndTACiMUE2Vwk4aI3xe4lZvqijdas
+2026-05-01 20:01:00 INFO  BookingTests:64 - Create booking request sent
+2026-05-01 20:01:00 INFO  BookingTests:67 - Validating create booking response
+2026-05-01 20:01:00 INFO  BookingTests:75 - Booking Created Successfully
+2026-05-01 20:01:00 INFO  BookingTests:76 - Booking ID: 27877
+2026-05-01 20:01:00 INFO  BookingTests:77 - Booking Ref: W-PMXPBK
+2026-05-01 20:01:00 INFO  BookingTests:79 - ************* Create Booking Test Completed *************
+2026-05-01 20:01:00 INFO  BookingTests:86 - ************* Read Booking By ID Test Started *************
+2026-05-01 20:01:00 INFO  BookingTests:89 - Using Bearer Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjcyODgsImVtYWlsIjoibmV2aWxsZS5zdGV1YmVyQGhvdG1haWwuY29tIiwiaWF0IjoxNzc3NjQ0MDU0LCJleHAiOjE3NzgyNDg4NTR9.sIRiVCiRK4DUs9ndTACiMUE2Vwk4aI3xe4lZvqijdas
+2026-05-01 20:01:00 INFO  BookingTests:90 - Booking ID: 27877
+2026-05-01 20:01:00 INFO  BookingTests:94 - Read booking by ID request sent
+2026-05-01 20:01:00 INFO  BookingTests:97 - Validating response
+2026-05-01 20:01:00 INFO  BookingTests:101 - ************* Read Booking By ID Test Completed *************
+2026-05-01 20:01:00 INFO  BookingTests:108 - ************* Read Booking By Ref Test Started *************
+2026-05-01 20:01:00 INFO  BookingTests:111 - Using Bearer Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjcyODgsImVtYWlsIjoibmV2aWxsZS5zdGV1YmVyQGhvdG1haWwuY29tIiwiaWF0IjoxNzc3NjQ0MDU0LCJleHAiOjE3NzgyNDg4NTR9.sIRiVCiRK4DUs9ndTACiMUE2Vwk4aI3xe4lZvqijdas
+2026-05-01 20:01:00 INFO  BookingTests:112 - Booking Ref: W-PMXPBK
+2026-05-01 20:01:00 INFO  BookingTests:116 - Read booking by reference request sent
+2026-05-01 20:01:00 INFO  BookingTests:119 - Validating response
+2026-05-01 20:01:00 INFO  BookingTests:123 - ************* Read Booking By Ref Test Completed *************
+2026-05-01 20:01:00 INFO  BookingTests:130 - ************* Delete Booking Test Started *************
+2026-05-01 20:01:00 INFO  BookingTests:133 - Using Bearer Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjcyODgsImVtYWlsIjoibmV2aWxsZS5zdGV1YmVyQGhvdG1haWwuY29tIiwiaWF0IjoxNzc3NjQ0MDU0LCJleHAiOjE3NzgyNDg4NTR9.sIRiVCiRK4DUs9ndTACiMUE2Vwk4aI3xe4lZvqijdas
+2026-05-01 20:01:00 INFO  BookingTests:134 - Booking ID to delete: 27877
+2026-05-01 20:01:01 INFO  BookingTests:138 - Delete booking request sent
+2026-05-01 20:01:01 INFO  BookingTests:141 - Validating delete response
+2026-05-01 20:01:01 INFO  BookingTests:147 - Booking Deleted Successfully
+2026-05-01 20:01:01 INFO  BookingTests:149 - ************* Delete Booking Test Completed *************
