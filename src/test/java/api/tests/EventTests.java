@@ -23,6 +23,12 @@ public class EventTests {
 
 		faker = new Faker();
 		eventPayload = new EventPayload();
+		
+		AuthTests authTests = new AuthTests();
+		
+		bearer_token = authTests.getToken();
+		
+		System.out.println("Bearer Token : "+bearer_token);
 
 		eventPayload.setTitle(faker.book().title());
 		eventPayload.setDescription(faker.lorem().sentence());
@@ -44,7 +50,7 @@ public class EventTests {
 
 	@Test(priority = 1)
 	public void testPostEvent(ITestContext context) {
-		bearer_token = (String) context.getSuite().getAttribute("bearer_token");
+//		bearer_token = (String) context.getSuite().getAttribute("bearer_token");
 
 		System.out.println("Test Post Event " + bearer_token);
 		Response response = EventsApiEndpoints.create_event(eventPayload, bearer_token);
@@ -60,7 +66,7 @@ public class EventTests {
 
 	@Test(priority = 2, dependsOnMethods = { "testPostEvent" })
 	public void testGetEvent(ITestContext context) {
-		bearer_token = (String) context.getSuite().getAttribute("bearer_token");
+//		bearer_token = (String) context.getSuite().getAttribute("bearer_token");
 
 		System.out.println("Test Post Event " + bearer_token);
 		Response response = EventsApiEndpoints.read_event(event_id, bearer_token);
@@ -73,7 +79,7 @@ public class EventTests {
 
 	@Test(priority = 3, dependsOnMethods = { "testGetEvent" })
 	public void testUpdateEvent(ITestContext context) {
-		bearer_token = (String) context.getSuite().getAttribute("bearer_token");
+//		bearer_token = (String) context.getSuite().getAttribute("bearer_token");
 
 		eventPayload = new EventPayload();
 
@@ -106,7 +112,7 @@ public class EventTests {
 
 	@Test(priority = 4, dependsOnMethods = { "testUpdateEvent" })
 	public void testDeleteEvent(ITestContext context) {
-		bearer_token = (String) context.getSuite().getAttribute("bearer_token");
+//		bearer_token = (String) context.getSuite().getAttribute("bearer_token");
 
 		Response response = EventsApiEndpoints.delete_event(event_id, bearer_token);
 

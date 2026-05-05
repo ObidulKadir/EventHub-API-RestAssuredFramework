@@ -89,6 +89,7 @@ public class AuthTests {
 
 		logger.info("Bearer Token Generated: " + bearer_token);
 		logger.info("************* User Login Successful ***************");
+		
 	}
 
 	@Test(priority = 3, dependsOnMethods = { "testPostLoginUser" })
@@ -111,4 +112,25 @@ public class AuthTests {
 
 		logger.info("************* User Authentication Successful ***************");
 	}
+	
+	
+	public static String getToken() {
+
+        Faker faker = new Faker();
+
+        // 🔹 Create payload
+        AuthPayload payload = new AuthPayload();
+        payload.setEmail(faker.internet().emailAddress());
+
+        String password = faker.name().firstName() + "123";
+        payload.setPassword(password);
+
+        // 🔹 Step 1: Register
+        AuthEndpoints.register_user(payload);
+
+        // 🔹 Step 2: Login with SAME payload
+        Response response = AuthEndpoints.login_user(payload);
+
+        return response.jsonPath().getString("token");
+    }
 }

@@ -34,6 +34,11 @@ public class BookingTests {
 
 		faker = new Faker();
 		bookingPayload = new BookingPayload();
+		
+		AuthTests authTest = new AuthTests();
+		bearer_token = authTest.getToken();
+		
+		System.out.println("The bearer token in booking test class "+bearer_token);
 
 		bookingPayload.setEventId(1);
 		bookingPayload.setCustomerName(faker.name().fullName());
@@ -56,7 +61,7 @@ public class BookingTests {
 
 		logger.info("************* Create Booking Test Started *************");
 
-		bearer_token = (String) context.getSuite().getAttribute("bearer_token");
+//		bearer_token = (String) context.getSuite().getAttribute("bearer_token");
 		logger.info("Using Bearer Token: " + bearer_token);
 
 		Response response = BookingEndPoints.create_booking(bookingPayload, bearer_token);
@@ -85,7 +90,7 @@ public class BookingTests {
 
 		logger.info("************* Read Booking By ID Test Started *************");
 
-		bearer_token = (String) context.getSuite().getAttribute("bearer_token");
+//		bearer_token = (String) context.getSuite().getAttribute("bearer_token");
 		logger.info("Using Bearer Token: " + bearer_token);
 		logger.info("Booking ID: " + bookingId);
 
@@ -107,7 +112,7 @@ public class BookingTests {
 
 		logger.info("************* Read Booking By Ref Test Started *************");
 
-		bearer_token = (String) context.getSuite().getAttribute("bearer_token");
+//		bearer_token = (String) context.getSuite().getAttribute("bearer_token");
 		logger.info("Using Bearer Token: " + bearer_token);
 		logger.info("Booking Ref: " + bookingRef);
 
@@ -129,7 +134,7 @@ public class BookingTests {
 
 		logger.info("************* Delete Booking Test Started *************");
 
-		bearer_token = (String) context.getSuite().getAttribute("bearer_token");
+//		bearer_token = (String) context.getSuite().getAttribute("bearer_token");
 		logger.info("Using Bearer Token: " + bearer_token);
 		logger.info("Booking ID to delete: " + bookingId);
 

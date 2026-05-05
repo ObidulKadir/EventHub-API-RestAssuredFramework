@@ -1,0 +1,53 @@
+2026-05-05 22:38:45 DEBUG AuthTests:31 - ------------Debuging--------------
+2026-05-05 22:38:45 INFO  AuthTests:32 - ===== Setup Data Started =====
+2026-05-05 22:38:45 INFO  AuthTests:42 - Generated Email: vickey.bayer@yahoo.com
+2026-05-05 22:38:45 INFO  AuthTests:43 - Generated Password: Dudley57.0
+2026-05-05 22:38:45 INFO  AuthTests:45 - ===== Setup Data Completed =====
+2026-05-05 22:38:45 INFO  AuthTests:51 - ************* Creating User ***************
+2026-05-05 22:38:47 INFO  AuthTests:55 - Request sent for user registration
+2026-05-05 22:38:47 INFO  AuthTests:58 - Validating response for user creation
+2026-05-05 22:38:48 INFO  AuthTests:63 - ************* User Created Successfully ***************
+2026-05-05 22:38:48 INFO  BookingTests:49 - Payload Prepared:
+2026-05-05 22:38:48 INFO  BookingTests:50 - Name: Ms. Eleanora Herman
+2026-05-05 22:38:48 INFO  BookingTests:51 - Email: lavada.bosco@hotmail.com
+2026-05-05 22:38:48 INFO  BookingTests:52 - Phone: +880125565874
+2026-05-05 22:38:48 INFO  BookingTests:53 - Quantity: 3
+2026-05-05 22:38:48 INFO  BookingTests:55 - ===== Booking Test Setup Completed =====
+2026-05-05 22:38:48 INFO  BookingTests:62 - ************* Create Booking Test Started *************
+2026-05-05 22:38:48 INFO  BookingTests:65 - Using Bearer Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjc3NDEsImVtYWlsIjoiYWxlamFuZHJvLmhhcnZleUBob3RtYWlsLmNvbSIsImlhdCI6MTc3Nzk5OTEyMywiZXhwIjoxNzc4NjAzOTIzfQ.lAsArb9Qe81vXL7DSgrMQHWaG9zTwitcpbYe1L-F-TE
+2026-05-05 22:38:48 INFO  AuthTests:69 - ************* Response Json validate successfully ***************
+2026-05-05 22:38:48 INFO  AuthTests:75 - ************* Logging in User ***************
+2026-05-05 22:38:48 INFO  BookingTests:69 - Create booking request sent
+2026-05-05 22:38:48 INFO  BookingTests:72 - Validating create booking response
+2026-05-05 22:38:48 INFO  BookingTests:80 - Booking Created Successfully
+2026-05-05 22:38:48 INFO  BookingTests:81 - Booking ID: 29928
+2026-05-05 22:38:48 INFO  BookingTests:82 - Booking Ref: W-XMPWGV
+2026-05-05 22:38:48 INFO  BookingTests:84 - ************* Create Booking Test Completed *************
+2026-05-05 22:38:48 INFO  BookingTests:91 - ************* Read Booking By ID Test Started *************
+2026-05-05 22:38:48 INFO  BookingTests:94 - Using Bearer Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjc3NDEsImVtYWlsIjoiYWxlamFuZHJvLmhhcnZleUBob3RtYWlsLmNvbSIsImlhdCI6MTc3Nzk5OTEyMywiZXhwIjoxNzc4NjAzOTIzfQ.lAsArb9Qe81vXL7DSgrMQHWaG9zTwitcpbYe1L-F-TE
+2026-05-05 22:38:48 INFO  BookingTests:95 - Booking ID: 29928
+2026-05-05 22:38:48 INFO  AuthTests:79 - Login request sent
+2026-05-05 22:38:48 INFO  AuthTests:82 - Validating login response
+2026-05-05 22:38:48 INFO  BookingTests:99 - Read booking by ID request sent
+2026-05-05 22:38:48 INFO  BookingTests:102 - Validating response
+2026-05-05 22:38:48 INFO  BookingTests:106 - ************* Read Booking By ID Test Completed *************
+2026-05-05 22:38:48 INFO  BookingTests:113 - ************* Read Booking By Ref Test Started *************
+2026-05-05 22:38:48 INFO  BookingTests:116 - Using Bearer Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjc3NDEsImVtYWlsIjoiYWxlamFuZHJvLmhhcnZleUBob3RtYWlsLmNvbSIsImlhdCI6MTc3Nzk5OTEyMywiZXhwIjoxNzc4NjAzOTIzfQ.lAsArb9Qe81vXL7DSgrMQHWaG9zTwitcpbYe1L-F-TE
+2026-05-05 22:38:48 INFO  BookingTests:117 - Booking Ref: W-XMPWGV
+2026-05-05 22:38:48 INFO  AuthTests:90 - Bearer Token Generated: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjc3NDIsImVtYWlsIjoidmlja2V5LmJheWVyQHlhaG9vLmNvbSIsImlhdCI6MTc3Nzk5OTEyNCwiZXhwIjoxNzc4NjAzOTI0fQ.zUc1Jhh210w_wWkD6sElV6atknrB8w5kCS1kr0TqHvM
+2026-05-05 22:38:48 INFO  AuthTests:91 - ************* User Login Successful ***************
+2026-05-05 22:38:48 INFO  AuthTests:98 - ************* Authenticating User ***************
+2026-05-05 22:38:48 INFO  AuthTests:100 - Using Bearer Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjc3NDIsImVtYWlsIjoidmlja2V5LmJheWVyQHlhaG9vLmNvbSIsImlhdCI6MTc3Nzk5OTEyNCwiZXhwIjoxNzc4NjAzOTI0fQ.zUc1Jhh210w_wWkD6sElV6atknrB8w5kCS1kr0TqHvM
+2026-05-05 22:38:48 INFO  BookingTests:121 - Read booking by reference request sent
+2026-05-05 22:38:48 INFO  BookingTests:124 - Validating response
+2026-05-05 22:38:48 INFO  BookingTests:128 - ************* Read Booking By Ref Test Completed *************
+2026-05-05 22:38:48 INFO  BookingTests:135 - ************* Delete Booking Test Started *************
+2026-05-05 22:38:48 INFO  BookingTests:138 - Using Bearer Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjc3NDEsImVtYWlsIjoiYWxlamFuZHJvLmhhcnZleUBob3RtYWlsLmNvbSIsImlhdCI6MTc3Nzk5OTEyMywiZXhwIjoxNzc4NjAzOTIzfQ.lAsArb9Qe81vXL7DSgrMQHWaG9zTwitcpbYe1L-F-TE
+2026-05-05 22:38:48 INFO  BookingTests:139 - Booking ID to delete: 29928
+2026-05-05 22:38:48 INFO  AuthTests:104 - Authentication request sent
+2026-05-05 22:38:48 INFO  AuthTests:107 - Validating authentication response
+2026-05-05 22:38:48 INFO  AuthTests:113 - ************* User Authentication Successful ***************
+2026-05-05 22:38:49 INFO  BookingTests:143 - Delete booking request sent
+2026-05-05 22:38:49 INFO  BookingTests:146 - Validating delete response
+2026-05-05 22:38:49 INFO  BookingTests:152 - Booking Deleted Successfully
+2026-05-05 22:38:49 INFO  BookingTests:154 - ************* Delete Booking Test Completed *************
