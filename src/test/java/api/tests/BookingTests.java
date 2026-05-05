@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 
 import api.endpoints.BookingEndPoints;
 import api.payload.BookingPayload;
+import api.utilities.TokenManager;
 import io.restassured.response.Response;
 
 import com.github.javafaker.Faker;
@@ -35,8 +36,10 @@ public class BookingTests {
 		faker = new Faker();
 		bookingPayload = new BookingPayload();
 		
-		AuthTests authTest = new AuthTests();
-		bearer_token = authTest.getToken();
+//		AuthTests authTest = new AuthTests();
+//		bearer_token = authTest.getToken();
+		
+		bearer_token = TokenManager.getToken(); // calling the tokenmanager to generate the token
 		
 		System.out.println("The bearer token in booking test class "+bearer_token);
 

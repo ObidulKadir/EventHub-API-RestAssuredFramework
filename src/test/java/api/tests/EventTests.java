@@ -9,6 +9,7 @@ import com.github.javafaker.Faker;
 
 import api.endpoints.EventsApiEndpoints;
 import api.payload.EventPayload;
+import api.utilities.TokenManager;
 import io.restassured.response.Response;
 
 public class EventTests {
@@ -24,9 +25,11 @@ public class EventTests {
 		faker = new Faker();
 		eventPayload = new EventPayload();
 		
-		AuthTests authTests = new AuthTests();
+//		AuthTests authTests = new AuthTests();
+//		bearer_token = authTests.getToken();
 		
-		bearer_token = authTests.getToken();
+		bearer_token = TokenManager.getToken(); // calling the tokenmanager to generate the token
+
 		
 		System.out.println("Bearer Token : "+bearer_token);
 

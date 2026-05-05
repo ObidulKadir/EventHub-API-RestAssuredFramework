@@ -2,53 +2,80 @@
 <testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-05-05T22:38:44 BDT" name="Suite" finished-at="2026-05-05T22:38:49 BDT" duration-ms="4799">
+  <suite started-at="2026-05-05T22:58:55 BDT" name="Suite" finished-at="2026-05-05T22:59:01 BDT" duration-ms="6083">
     <groups>
     </groups>
-    <test started-at="2026-05-05T22:38:44 BDT" name="EventTest" finished-at="2026-05-05T22:38:49 BDT" duration-ms="4799">
-      <class name="api.tests.EventTests">
-        <test-method is-config="true" signature="setup_data()[pri:0, instance:api.tests.EventTests@4007f65e]" started-at="2026-05-05T22:38:44 BDT" name="setup_data" finished-at="2026-05-05T22:38:48 BDT" duration-ms="3734" status="PASS">
+    <test started-at="2026-05-05T22:58:55 BDT" name="AuthTest" finished-at="2026-05-05T22:59:00 BDT" duration-ms="5075">
+      <class name="api.tests.AuthTests">
+        <test-method is-config="true" signature="setup_data()[pri:0, instance:api.tests.AuthTests@68c9133c]" started-at="2026-05-05T22:58:55 BDT" name="setup_data" finished-at="2026-05-05T22:58:56 BDT" duration-ms="579" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup_data -->
-        <test-method signature="testPostEvent(org.testng.ITestContext)[pri:1, instance:api.tests.EventTests@4007f65e]" started-at="2026-05-05T22:38:48 BDT" name="testPostEvent" finished-at="2026-05-05T22:38:48 BDT" duration-ms="278" status="PASS">
+        <test-method signature="testPostUser()[pri:1, instance:api.tests.AuthTests@68c9133c]" started-at="2026-05-05T22:58:56 BDT" name="testPostUser" finished-at="2026-05-05T22:58:58 BDT" duration-ms="2825" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPostUser -->
+        <test-method signature="testPostLoginUser(org.testng.ITestContext)[pri:2, instance:api.tests.AuthTests@68c9133c]" started-at="2026-05-05T22:58:58 BDT" name="testPostLoginUser" finished-at="2026-05-05T22:58:59 BDT" depends-on-methods="api.tests.AuthTests.testPostUser" duration-ms="338" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@5cbd2e5c]]>
+                <![CDATA[org.testng.TestRunner@2ec035dd]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPostLoginUser -->
+        <test-method signature="testAuthenticateUser()[pri:3, instance:api.tests.AuthTests@68c9133c]" started-at="2026-05-05T22:58:59 BDT" name="testAuthenticateUser" finished-at="2026-05-05T22:59:00 BDT" depends-on-methods="api.tests.AuthTests.testPostLoginUser" duration-ms="1079" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAuthenticateUser -->
+      </class> <!-- api.tests.AuthTests -->
+    </test> <!-- AuthTest -->
+    <test started-at="2026-05-05T22:58:55 BDT" name="EventTest" finished-at="2026-05-05T22:59:01 BDT" duration-ms="6080">
+      <class name="api.tests.EventTests">
+        <test-method is-config="true" signature="setup_data()[pri:0, instance:api.tests.EventTests@6f01b95f]" started-at="2026-05-05T22:58:55 BDT" name="setup_data" finished-at="2026-05-05T22:58:58 BDT" duration-ms="3203" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup_data -->
+        <test-method signature="testPostEvent(org.testng.ITestContext)[pri:1, instance:api.tests.EventTests@6f01b95f]" started-at="2026-05-05T22:58:58 BDT" name="testPostEvent" finished-at="2026-05-05T22:58:58 BDT" duration-ms="198" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3734f183]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPostEvent -->
-        <test-method signature="testGetEvent(org.testng.ITestContext)[pri:2, instance:api.tests.EventTests@4007f65e]" started-at="2026-05-05T22:38:48 BDT" name="testGetEvent" finished-at="2026-05-05T22:38:48 BDT" depends-on-methods="api.tests.EventTests.testPostEvent" duration-ms="214" status="PASS">
+        <test-method signature="testGetEvent(org.testng.ITestContext)[pri:2, instance:api.tests.EventTests@6f01b95f]" started-at="2026-05-05T22:58:58 BDT" name="testGetEvent" finished-at="2026-05-05T22:59:00 BDT" depends-on-methods="api.tests.EventTests.testPostEvent" duration-ms="1404" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@5cbd2e5c]]>
+                <![CDATA[org.testng.TestRunner@3734f183]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGetEvent -->
-        <test-method signature="testUpdateEvent(org.testng.ITestContext)[pri:3, instance:api.tests.EventTests@4007f65e]" started-at="2026-05-05T22:38:48 BDT" name="testUpdateEvent" finished-at="2026-05-05T22:38:48 BDT" depends-on-methods="api.tests.EventTests.testGetEvent" duration-ms="226" status="PASS">
+        <test-method signature="testUpdateEvent(org.testng.ITestContext)[pri:3, instance:api.tests.EventTests@6f01b95f]" started-at="2026-05-05T22:59:00 BDT" name="testUpdateEvent" finished-at="2026-05-05T22:59:00 BDT" depends-on-methods="api.tests.EventTests.testGetEvent" duration-ms="236" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@5cbd2e5c]]>
+                <![CDATA[org.testng.TestRunner@3734f183]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUpdateEvent -->
-        <test-method signature="testDeleteEvent(org.testng.ITestContext)[pri:4, instance:api.tests.EventTests@4007f65e]" started-at="2026-05-05T22:38:48 BDT" name="testDeleteEvent" finished-at="2026-05-05T22:38:49 BDT" depends-on-methods="api.tests.EventTests.testUpdateEvent" duration-ms="184" status="PASS">
+        <test-method signature="testDeleteEvent(org.testng.ITestContext)[pri:4, instance:api.tests.EventTests@6f01b95f]" started-at="2026-05-05T22:59:00 BDT" name="testDeleteEvent" finished-at="2026-05-05T22:59:01 BDT" depends-on-methods="api.tests.EventTests.testUpdateEvent" duration-ms="781" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@5cbd2e5c]]>
+                <![CDATA[org.testng.TestRunner@3734f183]]>
               </value>
             </param>
           </params>
@@ -57,50 +84,50 @@
         </test-method> <!-- testDeleteEvent -->
       </class> <!-- api.tests.EventTests -->
     </test> <!-- EventTest -->
-    <test started-at="2026-05-05T22:38:44 BDT" name="BookingTest" finished-at="2026-05-05T22:38:49 BDT" duration-ms="4753">
+    <test started-at="2026-05-05T22:58:55 BDT" name="BookingTest" finished-at="2026-05-05T22:59:01 BDT" duration-ms="6083">
       <class name="api.tests.BookingTests">
-        <test-method is-config="true" signature="setup_data()[pri:0, instance:api.tests.BookingTests@3de8f619]" started-at="2026-05-05T22:38:44 BDT" name="setup_data" finished-at="2026-05-05T22:38:48 BDT" duration-ms="3588" status="PASS">
+        <test-method is-config="true" signature="setup_data()[pri:0, instance:api.tests.BookingTests@710636b0]" started-at="2026-05-05T22:58:55 BDT" name="setup_data" finished-at="2026-05-05T22:58:58 BDT" duration-ms="3151" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup_data -->
-        <test-method signature="test_create_booking(org.testng.ITestContext)[pri:1, instance:api.tests.BookingTests@3de8f619]" started-at="2026-05-05T22:38:48 BDT" name="test_create_booking" finished-at="2026-05-05T22:38:48 BDT" duration-ms="313" status="PASS">
+        <test-method signature="test_create_booking(org.testng.ITestContext)[pri:1, instance:api.tests.BookingTests@710636b0]" started-at="2026-05-05T22:58:58 BDT" name="test_create_booking" finished-at="2026-05-05T22:58:58 BDT" duration-ms="270" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@41f224e3]]>
+                <![CDATA[org.testng.TestRunner@6415819]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_create_booking -->
-        <test-method signature="test_read_booking_by_id(org.testng.ITestContext)[pri:2, instance:api.tests.BookingTests@3de8f619]" started-at="2026-05-05T22:38:48 BDT" name="test_read_booking_by_id" finished-at="2026-05-05T22:38:48 BDT" depends-on-methods="api.tests.BookingTests.test_create_booking" duration-ms="212" status="PASS">
+        <test-method signature="test_read_booking_by_id(org.testng.ITestContext)[pri:2, instance:api.tests.BookingTests@710636b0]" started-at="2026-05-05T22:58:58 BDT" name="test_read_booking_by_id" finished-at="2026-05-05T22:58:59 BDT" depends-on-methods="api.tests.BookingTests.test_create_booking" duration-ms="376" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@41f224e3]]>
+                <![CDATA[org.testng.TestRunner@6415819]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_read_booking_by_id -->
-        <test-method signature="test_read_booking_by_ref(org.testng.ITestContext)[pri:3, instance:api.tests.BookingTests@3de8f619]" started-at="2026-05-05T22:38:48 BDT" name="test_read_booking_by_ref" finished-at="2026-05-05T22:38:48 BDT" depends-on-methods="api.tests.BookingTests.test_create_booking" duration-ms="172" status="PASS">
+        <test-method signature="test_read_booking_by_ref(org.testng.ITestContext)[pri:3, instance:api.tests.BookingTests@710636b0]" started-at="2026-05-05T22:58:59 BDT" name="test_read_booking_by_ref" finished-at="2026-05-05T22:59:00 BDT" depends-on-methods="api.tests.BookingTests.test_create_booking" duration-ms="1147" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@41f224e3]]>
+                <![CDATA[org.testng.TestRunner@6415819]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_read_booking_by_ref -->
-        <test-method signature="test_delete_booking(org.testng.ITestContext)[pri:4, instance:api.tests.BookingTests@3de8f619]" started-at="2026-05-05T22:38:48 BDT" name="test_delete_booking" finished-at="2026-05-05T22:38:49 BDT" depends-on-methods="api.tests.BookingTests.test_create_booking" duration-ms="202" status="PASS">
+        <test-method signature="test_delete_booking(org.testng.ITestContext)[pri:4, instance:api.tests.BookingTests@710636b0]" started-at="2026-05-05T22:59:00 BDT" name="test_delete_booking" finished-at="2026-05-05T22:59:01 BDT" depends-on-methods="api.tests.BookingTests.test_create_booking" duration-ms="887" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@41f224e3]]>
+                <![CDATA[org.testng.TestRunner@6415819]]>
               </value>
             </param>
           </params>
@@ -109,32 +136,5 @@
         </test-method> <!-- test_delete_booking -->
       </class> <!-- api.tests.BookingTests -->
     </test> <!-- BookingTest -->
-    <test started-at="2026-05-05T22:38:44 BDT" name="AuthTest" finished-at="2026-05-05T22:38:48 BDT" duration-ms="4583">
-      <class name="api.tests.AuthTests">
-        <test-method is-config="true" signature="setup_data()[pri:0, instance:api.tests.AuthTests@7a35b0f5]" started-at="2026-05-05T22:38:44 BDT" name="setup_data" finished-at="2026-05-05T22:38:45 BDT" duration-ms="623" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup_data -->
-        <test-method signature="testPostUser()[pri:1, instance:api.tests.AuthTests@7a35b0f5]" started-at="2026-05-05T22:38:45 BDT" name="testPostUser" finished-at="2026-05-05T22:38:48 BDT" duration-ms="3205" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testPostUser -->
-        <test-method signature="testPostLoginUser(org.testng.ITestContext)[pri:2, instance:api.tests.AuthTests@7a35b0f5]" started-at="2026-05-05T22:38:48 BDT" name="testPostLoginUser" finished-at="2026-05-05T22:38:48 BDT" depends-on-methods="api.tests.AuthTests.testPostUser" duration-ms="292" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@48f5f110]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testPostLoginUser -->
-        <test-method signature="testAuthenticateUser()[pri:3, instance:api.tests.AuthTests@7a35b0f5]" started-at="2026-05-05T22:38:48 BDT" name="testAuthenticateUser" finished-at="2026-05-05T22:38:48 BDT" depends-on-methods="api.tests.AuthTests.testPostLoginUser" duration-ms="183" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testAuthenticateUser -->
-      </class> <!-- api.tests.AuthTests -->
-    </test> <!-- AuthTest -->
   </suite> <!-- Suite -->
 </testng-results>

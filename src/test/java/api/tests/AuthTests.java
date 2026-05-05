@@ -113,24 +113,24 @@ public class AuthTests {
 		logger.info("************* User Authentication Successful ***************");
 	}
 	
-	
-	public static String getToken() {
-
-        Faker faker = new Faker();
-
-        // 🔹 Create payload
-        AuthPayload payload = new AuthPayload();
-        payload.setEmail(faker.internet().emailAddress());
-
-        String password = faker.name().firstName() + "123";
-        payload.setPassword(password);
-
-        // 🔹 Step 1: Register
-        AuthEndpoints.register_user(payload);
-
-        // 🔹 Step 2: Login with SAME payload
-        Response response = AuthEndpoints.login_user(payload);
-
-        return response.jsonPath().getString("token");
-    }
+	// Approach 1: To handle the dyanmic test.
+//	public static String getToken() {
+//
+//        Faker faker = new Faker();
+//
+//        // 🔹 Create payload
+//        AuthPayload payload = new AuthPayload();
+//        payload.setEmail(faker.internet().emailAddress());
+//
+//        String password = faker.name().firstName() + "123";
+//        payload.setPassword(password);
+//
+//        // 🔹 Step 1: Register
+//        AuthEndpoints.register_user(payload);
+//
+//        // 🔹 Step 2: Login with SAME payload
+//        Response response = AuthEndpoints.login_user(payload);
+//
+//        return response.jsonPath().getString("token");
+//    }
 }
